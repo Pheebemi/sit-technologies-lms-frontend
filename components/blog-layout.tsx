@@ -27,7 +27,7 @@ export function BlogLayout({
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
               <BookOpen className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold">ALGADDAF LMS</span>
+              <span className="text-xl font-bold">SIT Technologies LMS</span>
             </Link>
 
             {/* Navigation */}
@@ -77,7 +77,7 @@ export function BlogLayout({
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <BookOpen className="h-6 w-6 text-primary" />
-                <span className="text-xl font-bold">ALGADDAF LMS</span>
+                <span className="text-xl font-bold">SIT Technologies LMS</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Empowering education through technology. Learn, grow, and achieve your goals with our comprehensive learning management system.
@@ -132,7 +132,7 @@ export function BlogLayout({
             <div className="space-y-4">
               <h3 className="text-sm font-semibold">Contact</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>Email: info@algaddaftech.com</p>
+                <p>Email: info@sittechnologies.ng</p>
                 <p>Phone: +234 803 937 6179</p>
                 <p>Phone: +234 706 352 3802</p>
                 <p>Address: No. 46 Barde Way, Technology Incubation Centre Jalingo, Unit II Block One</p>
@@ -144,7 +144,7 @@ export function BlogLayout({
           <div className="mt-8 pt-8 border-t">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-sm text-muted-foreground">
-                © 2024 ALGADDAF LMS. All rights reserved.
+                © 2025 SIT Technologies LMS. All rights reserved.
               </p>
               <div className="flex space-x-4 text-sm">
                 <Link href="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">

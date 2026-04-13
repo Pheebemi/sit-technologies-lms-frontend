@@ -75,7 +75,7 @@ function VerifyEmailContent() {
       localStorage.setItem('user', JSON.stringify(res.user))
       
       toast.success('Email verified successfully!', {
-        description: 'Welcome to ALGADDAF! Redirecting to dashboard...',
+        description: 'Welcome to SIT Technologies LMS! Redirecting to dashboard...',
         duration: 2000
       })
       
