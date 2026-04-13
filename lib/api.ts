@@ -1,4 +1,4 @@
-const API_ROOT = process.env.NEXT_PUBLIC_API_URL || 'https://pheedev.pythonanywhere.com/'
+const API_ROOT = process.env.NEXT_PUBLIC_API_URL || 'https://api.sittechnologies.ng'
 
 // Helper function to get auth headers
 function getAuthHeaders() {
