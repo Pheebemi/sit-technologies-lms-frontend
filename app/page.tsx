@@ -1,4 +1,4 @@
-import { GraduationCap } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
@@ -6,9 +6,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-background px-4">
       <div className="flex flex-col items-center gap-6 text-center max-w-lg">
-        <div className="flex items-center justify-center w-20 h-20 rounded-full bg-primary/10">
-          <GraduationCap className="w-10 h-10 text-primary" />
-        </div>
+        <Image src="/sit.png" alt="SIT Technologies" width={100} height={100} className="rounded-xl" />
 
         <div className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tight">SIT Technologies LMS</h1>

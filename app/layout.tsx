@@ -7,6 +7,10 @@ import { Analytics } from '@vercel/analytics/react'
 export const metadata: Metadata = {
   title: 'SIT Technologies LMS',
   description: 'Learning Management System for SIT Technologies',
+  icons: {
+    icon: '/sit.png',
+    apple: '/sit.png',
+  },
 }
 
 export default function RootLayout({

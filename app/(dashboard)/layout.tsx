@@ -200,9 +200,7 @@ export default function DashboardLayout({
         <div className="flex flex-col flex-grow pt-5 bg-card border-r">
           <div className="flex items-center justify-between flex-shrink-0 px-4">
             <div className="flex items-center space-x-3">
-              <div className="h-8 w-8 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">S</span>
-              </div>
+              <img src="/sit.png" alt="SIT Technologies" className="h-8 w-8 rounded-lg object-contain" />
               <div>
                 <span className="text-lg font-bold text-foreground">SIT Technologies</span>
                 <div className="text-xs text-muted-foreground -mt-1">LMS</div>
@@ -282,9 +280,7 @@ export default function DashboardLayout({
         <div className="flex flex-col flex-grow pt-5 bg-card border-r">
           <div className="flex items-center justify-between flex-shrink-0 px-4">
             <div className="flex items-center space-x-3">
-              <div className="h-8 w-8 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">S</span>
-              </div>
+              <img src="/sit.png" alt="SIT Technologies" className="h-8 w-8 rounded-lg object-contain" />
               <div>
                 <span className="text-lg font-bold text-foreground">SIT Technologies</span>
                 <div className="text-xs text-muted-foreground -mt-1">LMS</div>
