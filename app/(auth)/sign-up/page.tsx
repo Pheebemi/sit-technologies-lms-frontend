@@ -76,27 +76,6 @@ export default function SignUpPage() {
       </div>
 
       <form onSubmit={submit} className="space-y-4">
-        {/* Role */}
-        <div className="space-y-1">
-          <label className="text-sm font-medium">I am a</label>
-          <div className="flex gap-2">
-            {['student', 'tutor'].map(role => (
-              <button
-                key={role}
-                type="button"
-                onClick={() => setForm(f => ({ ...f, role }))}
-                className={`flex-1 py-2 rounded-md border text-sm font-medium transition-colors capitalize ${
-                  form.role === role
-                    ? 'border-primary bg-primary text-primary-foreground'
-                    : 'border-border hover:bg-muted'
-                }`}
-              >
-                {role}
-              </button>
-            ))}
-          </div>
-        </div>
-
         {/* Name */}
         <div className="grid grid-cols-2 gap-3">
           <div className="space-y-1">
