@@ -688,17 +688,27 @@ export default function StudentQuizPage() {
                 </div>
                 
                 <div className="grid grid-cols-5 gap-1">
-                  {(shuffledQuestions.length > 0 ? shuffledQuestions : quiz?.questions || []).map((_, index) => (
-                    <Button
-                      key={index}
-                      variant={index === currentQuestionIndex ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setCurrentQuestionIndex(index)}
-                      className="h-8 w-8 p-0"
-                    >
-                      {index + 1}
-                    </Button>
-                  ))}
+                  {(shuffledQuestions.length > 0 ? shuffledQuestions : quiz?.questions || []).map((question, index) => {
+                    const isAnswered = answers[question.id] !== undefined && answers[question.id] !== ''
+                    const isCurrent = index === currentQuestionIndex
+                    return (
+                      <Button
+                        key={index}
+                        variant="outline"
+                        size="sm"
+                        onClick={() => setCurrentQuestionIndex(index)}
+                        className={`h-8 w-8 p-0 ${
+                          isCurrent
+                            ? 'bg-primary text-primary-foreground border-primary hover:bg-primary/90'
+                            : isAnswered
+                            ? 'bg-green-500 text-white border-green-500 hover:bg-green-600'
+                            : ''
+                        }`}
+                      >
+                        {index + 1}
+                      </Button>
+                    )
+                  })}
                 </div>
               </CardContent>
             </Card>
