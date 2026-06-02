@@ -56,10 +56,13 @@ export default function SignUpPage() {
       }
     } catch (err: any) {
       const errors = err.response?.data?.errors
-      const description = errors?.username?.[0] || errors?.email?.[0] || errors?.password?.[0]
-      toast.error(err.response?.data?.message || 'Failed to create account', {
-        description,
-      })
+      const message =
+        errors?.password?.[0] ||
+        errors?.username?.[0] ||
+        errors?.email?.[0] ||
+        err.response?.data?.message ||
+        'Failed to create account'
+      toast.error(message)
     } finally {
       setLoading(false)
     }
